@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" media="screen" />
+    <title>测试页面</title>
+    <link rel="stylesheet" type="text/css" href="css/roll.css">
+    <link rel="stylesheet" type="text/css" href="css/tab.css">
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/roll.js"></script>
+    <script src="js/tab.js"></script>
+    <style>
+   
+	*{
+		margin: 0;
+		border-style: none;
+	}
+
+	.roll, .nav{
+		margin: 40px;
+	}
+    
+    </style>
+ </head>
+ <body>
+<ul class="nav tab1">
+    <li class="item"><p>近7天</p></li>
+    <li class="item"><p>近14天</p></li>
+    <li class="item"><p>近30天</p></li>
+</ul>
+ 
+ <div class="roll"></div>
+
+<script type="text/javascript">
+	var roll = $(".roll").roll({
+		lineHeight: 20
+	});
+
+	setTimeout(function(){
+		roll.changeNumber("128964", 1000);
+	}, 2000);
+
+	$(".tab1").tab({
+        callback: function (index) {
+        	console.log(index);
+        },
+        selectedIndex: 0
+    });
+</script>
+
+ </body>
+ </html>

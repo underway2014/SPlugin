@@ -1,0 +1,16 @@
+.roll > div{
+		display: inline-block;
+		position: relative;
+		font-size: 20px;
+		height: 20px;
+		/*width: 20px;*/
+		line-height: 20px;
+		overflow: hidden;
+	}
+	div.animation {
+		position: absolute;
+		left: 0;
+	}
+	.hide{
+		opacity: 0;
+	}

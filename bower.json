@@ -1,0 +1,25 @@
+{
+  "name": "kuanzhaiyun",
+  "authors": [
+    "bin.li"
+  ],
+  "description": "",
+  "main": "",
+  "keywords": [
+    "kzy"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "echarts": "^3.5.4",
+    "jquery": "^3.2.1"
+  }
+}
